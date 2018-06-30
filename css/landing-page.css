@@ -147,8 +147,7 @@ footer.footer {
  .navbar-toggler{
    background:#fff !important;
  }
-
-.about{
+ .about{
   margin: 4em 0;
   padding: 1em;
   position: relative;
@@ -170,12 +169,11 @@ footer.footer {
  }
  .about .desc{
   padding: 2em;
-  border-left:4px solid #10828C;
+  border-left:4px solid;
  }
- .about .desc h3{
-  color: #10828C;
- }
- .about .desc p{
+ 
+.about .desc p{
   line-height:2;
   color:#888;
  }
+
