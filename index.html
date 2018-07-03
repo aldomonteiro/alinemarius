@@ -302,16 +302,6 @@
         </div>
       </div>
     </footer>
-    <!-- Ajax Form Subscription -->
-    <script>
-      $("#contact").submit(function(e) {
-        e.preventDefault();
-        var $form = $(this);
-        $.post($form.attr("action"), $form.serialize()).then(function() {
-        alert("Tudo pronto! Obrigado por se cadastrar.");
-      });
-      });
-  </script>
     <!-- Bootstrap core JavaScript -->
     <script src="vendor/jquery/jquery.min.js"></script>
     <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
