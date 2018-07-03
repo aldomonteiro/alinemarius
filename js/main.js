@@ -7,5 +7,12 @@ $(document).ready(function(){
         },1000)
      
     })
-   
+    
+    $("#contact").submit(function(e) {
+        e.preventDefault();
+        var $form = $(this);
+        $.post($form.attr("action"), $form.serialize()).then(function() {
+        alert("Tudo pronto! Obrigado por se cadastrar.");
+      });
+      });
    })
