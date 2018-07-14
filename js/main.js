@@ -7,6 +7,12 @@ $(document).ready(function(){
         },1000)
      
     })
+
+    $('.main-carousel').flickity({
+        // options
+        cellAlign: 'left',
+        contain: true
+      });    
    })
 
  $('#contact').submit(function(e) {
@@ -16,3 +22,4 @@ $(document).ready(function(){
         alert("Tudo pronto! Obrigado por se cadastrar.");
   })
 })
+
