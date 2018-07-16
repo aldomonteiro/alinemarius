@@ -167,19 +167,38 @@
     
     <!-- Youtube -->
     <section class="showcase">
-        <div class="main-carousel">
-      <div class="embed-responsive embed-responsive-16by9">
-          <div class="carousel-cell">
+    <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
+      <ol class="carousel-indicators">
+      <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+      <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+      <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+      </ol>
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+            <div class="embed-responsive embed-responsive-16by9">
               <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/yNO3NeQP7Ts" allow="autoplay; encrypted-media" allowfullscreen></iframe>
-          </div> <!-- carousel-cell -->
-          <div class="carousel-cell">
+            </div>
+        </div>
+        <div class="carousel-item">
+            <div class="embed-responsive embed-responsive-16by9">
               <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/-ad0KlL6k3w"  allow="autoplay; encrypted-media" allowfullscreen></iframe>
-          </div>  <!-- carousel-cell -->
-          <div class="carousel-cell">
+            </div>
+        </div>
+        <div class="carousel-item">
+            <div class="embed-responsive embed-responsive-16by9">
               <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/3WM4xVVjRss" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
-          </div> <!-- carousel-cell -->
-        </div> <!-- main-carousel -->
+            </div>
+        </div>
       </div>
+      <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="sr-only">Anterior</span>
+      </a>
+      <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="sr-only">Próximo</span>
+      </a>
+    </div>
     </section>
 
     <!-- Testimonials -->
