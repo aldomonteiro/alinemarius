@@ -61,27 +61,31 @@
       <div class="row">
         <div class="w-50">
           <h1 class="mb-5">Como se transformar em uma mãe educadora em sua própria casa.</h1>
-          <p class="mb-5">
-            Cadastre-se e receba semanalmente conteúdo sobre pedagogia materna e também seja avisado sobre as novidades da Aline
+          <h3 class="mb-5">
+            Digite o seu nome e o seu e-mail aqui que eu vou te mandar o meu e-book: 23 dicas para melhorar o comportamento dos seus filhos!
           </p>
         </div>
       </div>
       <div class="col-md-10 col-lg-8 col-xl-7 mx-auto">
-        <form action="https://formspree.io/aline@alinemarius.com.br" method="POST">
-          <div class="form-row">
-            <div class="col-12 col-md-3 mb-2 mb-md-0">
-              <input type="text" name="_replytoname" class="form-control form-control-lg" placeholder="Seu nome">
+
+          <form name="contact" method="POST" netlify-honeypot="bot-field" action="/form/success" netlify>
+            <div class="invisible">
+              <label>Don’t fill this out if you're human:
+                <input name="bot-field" />
+              </label>
             </div>
-            <div class="col-12 col-md-6 mb-2 mb-md-0">
-              <input type="email" name="_replyto" class="form-control form-control-lg" placeholder="Seu melhor e-mail">
+            <div class="form-row">
+              <div class="col-12 col-md-3 mb-2 mb-md-0">
+                <input type="name" name="name" class="form-control form-control-lg" placeholder="Nome...">
+              </div>
+              <div class="col-12 col-md-5 mb-2 mb-md-0">
+                <input type="email" name="email" class="form-control form-control-lg" placeholder="O seu melhor e-mail...">
+              </div>
+              <div class="col-12 col-md-4">
+                <button type="submit" class="btn btn-block btn-lg btn-primary">Me manda o e-book!</button>
+              </div>
             </div>
-            <div class="col-12 col-md-3 mb-2 mb-md-0">
-              <input type="submit" class="btn btn-lg btn-primary" value="Quero receber!">
-            </div>
-            <input type="hidden" name="_next" value="http://www.alinemarius.com.br/success.html" />
-            <input type="hidden" name="_language" value="pt-BR" />
-          </div>
-        </form>
+          </form>
       </div>
     </div>
     </div>
